@@ -4,11 +4,11 @@ import type { Project, Experience, Skill } from './types';
 export const PERSONAL_INFO = {
   name: "Haowen Pang",
   role: "PhD Student",
-  tagline: "Medical Image Translation. Diffusion Model. Generative Adversarial Network.",
+  tagline: "Medical Image Synthesis. Medical Image Translation. Diffusion Model. Generative Adversarial Network. Flow Matching.",
   email: "haowen.pang@bit.edu.cn",
   github: "https://github.com/panghaowen-hub",
   googleScholar: "https://scholar.google.com/citations?user=eJEDpA0AAAAJ",
-  about: `I am currently a PhD student at the Beijing Institute of Technology, under the supervision of Prof. Chuyang Ye. I obtained my Master's degree from Northeastern University (Shenyang, China), where I was advised by Prof. Shouliang Qi. Presently, I am also a visiting PhD student in the research group of Prof. Anqi Qiu at Hong Kong Polytechnic University. My research primarily focuses on medical image synthesis, particularly brain MRI. I am deeply interested in developing foundation models to enhance image quality and promote intelligent diagnosis in neuroimaging.`
+  about: `I am currently a PhD student at the Beijing Institute of Technology, under the supervision of Prof. Chuyang Ye. I obtained my Master's degree from Northeastern University, where I was advised by Prof. Shouliang Qi. Presently, I am also a visiting PhD student in the research group of Prof. Anqi Qiu at Hong Kong Polytechnic University. My research primarily focuses on medical image synthesis, particularly brain MRI. I am deeply interested in developing foundation models to enhance image quality and promote intelligent diagnosis in neuroimaging.`
 };
 
 export const PROJECTS: Project[] = [
@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     description: 'Dose reduction via contrast amplification modeling for brain contrast-enhanced magnetic resonance images.',
     tags: ['Image Synthesis', 'GAN', 'CEMRI'],
     imageUrl: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=800&q=80',
-    githubUrl: 'https://github.com/panghaowen-hub/ai-assistant',
+    githubUrl: 'https://github.com/PangHaowen-hub/DRCAM',
     demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S174680942501585X'
   },
   {
@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
     description: 'Deformation-driven diffusion model for synthesis of contrast-enhanced MRI with brain tumors.',
     tags: ['Image Synthesis', 'Diffusion Model', 'Deformation', 'MRI'],
     imageUrl: 'https://images.unsplash.com/photo-1576091160550-217358c7e618?auto=format&fit=crop&w=800&q=80',
-    githubUrl: 'https://github.com/panghaowen-hub/dashboard',
+    githubUrl: 'https://github.com/PangHaowen-hub/D3M',
     demoUrl: 'https://example.com'
   },
   {
@@ -36,6 +36,7 @@ export const PROJECTS: Project[] = [
     description: 'Cascaded diffusion model and segment anything model for medical image synthesis via uncertainty-guided prompt generation.',
     tags: ['Image Synthesis', 'Diffusion Model', 'Segment Anything Model'],
     imageUrl: 'https://images.unsplash.com/photo-1631557993077-8490a07e868c?auto=format&fit=crop&w=800&q=80',
+    githubUrl: 'https://github.com/PangHaowen-hub/DM-SAM',
     demoUrl: 'https://link.springer.com/chapter/10.1007/978-3-031-96628-6_14',
   },
   {
@@ -58,19 +59,19 @@ export const PROJECTS: Project[] = [
 
 export const SKILLS: Skill[] = [
   { name: 'Python', icon: <Terminal size={20} />, level: 95 },
-  { name: 'MATLAB', icon: <Sigma size={20} />, level: 90 },
+  { name: 'MATLAB', icon: <Sigma size={20} />, level: 80 },
   { name: 'LaTeX', icon: <FileText size={20} />, level: 95 },
-  { name: 'R', icon: <BarChart size={20} />, level: 85 },
+  { name: 'R', icon: <BarChart size={20} />, level: 80 },
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
     company: "Hong Kong Polytechnic University",
     role: "Visiting PhD Student",
-    period: "2024 - Present",
+    period: "2025 - Present",
     description: [
-      "Research Group of Prof. Anqi Qiu.",
-      "Conducting research on neuroimaging and intelligent diagnosis."
+      "Supervisor: Prof. Anqi Qiu.",
+      "Conducting research on neuroimaging."
     ]
   },
   {
@@ -88,7 +89,7 @@ export const EXPERIENCE: Experience[] = [
     period: "2020 - 2023",
     description: [
       "Supervisor: Prof. Shouliang Qi.",
-      "Specialized in medical image analysis and deep learning."
+      "Research Focus: medical image segmentation and synthesis."
     ]
   },
   {
@@ -96,7 +97,7 @@ export const EXPERIENCE: Experience[] = [
     role: "Bachelor's Degree",
     period: "2016 - 2020",
     description: [
-      "Majored in Software Engineering/Computer Science related field."
+      "Majored in Information and Computing Science."
     ]
   }
 ];
