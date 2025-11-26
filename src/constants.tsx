@@ -89,7 +89,7 @@ export const EXPERIENCE: Experience[] = [
     period: "2020 - 2023",
     description: [
       "Supervisor: Prof. Shouliang Qi.",
-      "Research Focus: medical image segmentation and synthesis."
+      "Research Focus: Medical image segmentation and synthesis."
     ]
   },
   // {
