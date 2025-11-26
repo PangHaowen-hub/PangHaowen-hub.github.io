@@ -10,7 +10,7 @@ const Projects = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
             <div className="w-20 h-1.5 bg-primary-500 rounded-full mb-6"></div>
             <p className="text-slate-400 text-center max-w-2xl">
-                A collection of my recent work, side projects, and open source contributions.
+                A collection of my recent work and open source contributions.
             </p>
         </div>
 

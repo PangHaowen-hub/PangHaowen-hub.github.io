@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'CEMRI Dose reduction',
+    title: 'CEMRI Dose Reduction',
     description: 'Dose reduction via contrast amplification modeling for brain contrast-enhanced magnetic resonance images.',
     tags: ['Image Synthesis', 'GAN', 'CEMRI'],
     imageUrl: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=800&q=80',
@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '3',
-    title: 'Uncertainty-Guided Medical Image Synthesis',
+    title: 'Uncertainty-Guided Image Synthesis',
     description: 'Cascaded diffusion model and segment anything model for medical image synthesis via uncertainty-guided prompt generation.',
     tags: ['Image Synthesis', 'Diffusion Model', 'Segment Anything Model'],
     imageUrl: 'https://images.unsplash.com/photo-1631557993077-8490a07e868c?auto=format&fit=crop&w=800&q=80',
@@ -92,12 +92,12 @@ export const EXPERIENCE: Experience[] = [
       "Research Focus: medical image segmentation and synthesis."
     ]
   },
-  {
-    company: "Hebei University",
-    role: "Bachelor's Degree",
-    period: "2016 - 2020",
-    description: [
-      "Majored in Information and Computing Science."
-    ]
-  }
+  // {
+  //   company: "Hebei University",
+  //   role: "Bachelor's Degree",
+  //   period: "2016 - 2020",
+  //   description: [
+  //     "Majored in Information and Computing Science."
+  //   ]
+  // }
 ];
