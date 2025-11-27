@@ -19,6 +19,30 @@ const About = () => {
                         </div>
 
                         <div className="space-y-6">
+                            <h3 className="text-2xl font-semibold text-white">Honors & Awards</h3>
+                            <div className="space-y-4">
+                                {AWARDS.map((award, index) => (
+                                    <div key={index} className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50 hover:border-primary-500/30 transition-colors group">
+                                        <div className="flex items-start gap-3">
+                                            <div className="text-primary-400 mt-1">
+                                                <Trophy size={18} />
+                                            </div>
+                                            <div>
+                                                <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
+                                                    <h4 className="font-bold text-white group-hover:text-primary-400 transition-colors">{award.title}</h4>
+                                                    <span className="text-xs font-mono text-slate-500 bg-slate-800 px-1.5 py-0.5 rounded">{award.date}</span>
+                                                </div>
+                                                <p className="text-slate-400 text-sm leading-relaxed">
+                                                    {award.description}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="space-y-6">
                             <h3 className="text-2xl font-semibold text-white">Technical Proficiency</h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {SKILLS.map((skill) => (
@@ -39,94 +63,73 @@ const About = () => {
                         </div>
                     </div>
 
-                    {/* Right Col: Education Timeline */}
-                    <div className="space-y-8">
-                        <h3 className="text-2xl font-semibold text-white mb-8">Education</h3>
-                        <div className="space-y-0 relative border-l border-slate-700 ml-3">
-                            {EXPERIENCE.map((job, index) => (
-                                <div key={index} className="relative pl-8 pb-12 last:pb-0 group">
-                                    {/* Dot */}
-                                    <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-400 group-hover:bg-primary-500 group-hover:scale-125 transition-all"></div>
+                    {/* Right Col: Education & Internships */}
+                    <div className="space-y-12">
+                        {/* Education */}
+                        <div className="space-y-8">
+                            <h3 className="text-2xl font-semibold text-white mb-8">Education</h3>
+                            <div className="space-y-0 relative border-l border-slate-700 ml-3">
+                                {EXPERIENCE.map((job, index) => (
+                                    <div key={index} className="relative pl-8 pb-12 last:pb-0 group">
+                                        {/* Dot */}
+                                        <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-400 group-hover:bg-primary-500 group-hover:scale-125 transition-all"></div>
 
-                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                        <h4 className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">{job.role}</h4>
-                                        <span className="text-sm font-mono text-slate-500 bg-slate-800 px-2 py-1 rounded">{job.period}</span>
-                                    </div>
-
-                                    <div className="flex items-center gap-2 mb-4 text-slate-300">
-                                        <GraduationCap size={16} />
-                                        <span className="font-medium">{job.company}</span>
-                                    </div>
-
-                                    <ul className="space-y-2">
-                                        {job.description.map((desc, i) => (
-                                            <li key={i} className="text-slate-400 text-sm leading-relaxed flex items-start">
-                                                <span className="mr-2 mt-1.5 w-1 h-1 bg-slate-600 rounded-full shrink-0"></span>
-                                                {desc}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="space-y-6 mt-16"> {/* Added mt-16 for spacing */}
-                    <h3 className="text-2xl font-semibold text-white">Honors & Awards</h3>
-                    <div className="space-y-4">
-                        {AWARDS.map((award, index) => (
-                            <div key={index} className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50 hover:border-primary-500/30 transition-colors group">
-                                <div className="flex items-start gap-3">
-                                    <div className="text-primary-400 mt-1">
-                                        <Trophy size={18} />
-                                    </div>
-                                    <div>
-                                        <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
-                                            <h4 className="font-bold text-white group-hover:text-primary-400 transition-colors">{award.title}</h4>
-                                            <span className="text-xs font-mono text-slate-500 bg-slate-800 px-1.5 py-0.5 rounded">{award.date}</span>
+                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                            <h4 className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">{job.role}</h4>
+                                            <span className="text-sm font-mono text-slate-500 bg-slate-800 px-2 py-1 rounded">{job.period}</span>
                                         </div>
-                                        <p className="text-slate-400 text-sm leading-relaxed">
-                                            {award.description}
-                                        </p>
+
+                                        <div className="flex items-center gap-2 mb-4 text-slate-300">
+                                            <GraduationCap size={16} />
+                                            <span className="font-medium">{job.company}</span>
+                                        </div>
+
+                                        <ul className="space-y-2">
+                                            {job.description.map((desc, i) => (
+                                                <li key={i} className="text-slate-400 text-sm leading-relaxed flex items-start">
+                                                    <span className="mr-2 mt-1.5 w-1 h-1 bg-slate-600 rounded-full shrink-0"></span>
+                                                    {desc}
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            {/* Internship Experience */}
-            <div className="space-y-8">
-                <h3 className="text-2xl font-semibold text-white mb-8">Internship Experience</h3>
-                <div className="space-y-0 relative border-l border-slate-700 ml-3">
-                    {INTERNSHIPS.map((internship, index) => (
-                        <div key={index} className="relative pl-8 pb-12 last:pb-0 group">
-                            {/* Dot */}
-                            <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-400 group-hover:bg-primary-500 group-hover:scale-125 transition-all"></div>
-
-                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                <h4 className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">{internship.role}</h4>
-                                <span className="text-sm font-mono text-slate-500 bg-slate-800 px-2 py-1 rounded">{internship.period}</span>
-                            </div>
-
-                            <div className="flex items-center gap-2 mb-4 text-slate-300">
-                                <Briefcase size={16} />
-                                <span className="font-medium">{internship.company}</span>
-                            </div>
-
-                            <ul className="space-y-2">
-                                {internship.description.map((desc, i) => (
-                                    <li key={i} className="text-slate-400 text-sm leading-relaxed flex items-start">
-                                        <span className="mr-2 mt-1.5 w-1 h-1 bg-slate-600 rounded-full shrink-0"></span>
-                                        {desc}
-                                    </li>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
-                    ))}
+
+                        {/* Internship Experience */}
+                        <div className="space-y-8">
+                            <h3 className="text-2xl font-semibold text-white mb-8">Internship Experience</h3>
+                            <div className="space-y-0 relative border-l border-slate-700 ml-3">
+                                {INTERNSHIPS.map((internship, index) => (
+                                    <div key={index} className="relative pl-8 pb-12 last:pb-0 group">
+                                        {/* Dot */}
+                                        <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-400 group-hover:bg-primary-500 group-hover:scale-125 transition-all"></div>
+
+                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                                            <h4 className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">{internship.role}</h4>
+                                            <span className="text-sm font-mono text-slate-500 bg-slate-800 px-2 py-1 rounded">{internship.period}</span>
+                                        </div>
+
+                                        <div className="flex items-center gap-2 mb-4 text-slate-300">
+                                            <Briefcase size={16} />
+                                            <span className="font-medium">{internship.company}</span>
+                                        </div>
+
+                                        <ul className="space-y-2">
+                                            {internship.description.map((desc, i) => (
+                                                <li key={i} className="text-slate-400 text-sm leading-relaxed flex items-start">
+                                                    <span className="mr-2 mt-1.5 w-1 h-1 bg-slate-600 rounded-full shrink-0"></span>
+                                                    {desc}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
