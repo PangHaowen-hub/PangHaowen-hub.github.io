@@ -40,7 +40,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection(SectionId.HERO)}>
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-indigo-400">
-              PH.
+              HP.
             </span>
           </div>
 
