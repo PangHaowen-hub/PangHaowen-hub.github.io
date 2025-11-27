@@ -74,7 +74,7 @@ const Hero = () => {
         <div className="space-y-6 max-w-4xl mx-auto">
             <div className="inline-block animate-fade-in-up">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-500/10 text-primary-300 border border-primary-500/20 mb-4">
-                    Welcome to my homepage.
+                    Welcome to My Homepage
                 </span>
             </div>
             

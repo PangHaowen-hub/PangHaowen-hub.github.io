@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     title: 'CEMRI Synthesis from NCMRI',
     description: 'Deformation-driven diffusion model for synthesis of contrast-enhanced MRI with brain tumors.',
     tags: ['Image Synthesis', 'Diffusion Model', 'Deformation', 'MRI'],
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-217358c7e618?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=800&q=80',
     githubUrl: 'https://github.com/PangHaowen-hub/D3M',
     demoUrl: 'https://example.com'
   },
@@ -35,7 +35,7 @@ export const PROJECTS: Project[] = [
     title: 'Uncertainty-Guided Image Synthesis',
     description: 'Cascaded diffusion model and segment anything model for medical image synthesis via uncertainty-guided prompt generation.',
     tags: ['Image Synthesis', 'Diffusion Model', 'Segment Anything Model'],
-    imageUrl: 'https://images.unsplash.com/photo-1631557993077-8490a07e868c?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1576091160550-217358c7e618?auto=format&fit=crop&w=800&q=80',
     githubUrl: 'https://github.com/PangHaowen-hub/DM-SAM',
     demoUrl: 'https://link.springer.com/chapter/10.1007/978-3-031-96628-6_14',
   },
