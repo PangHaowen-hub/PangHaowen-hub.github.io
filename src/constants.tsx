@@ -144,6 +144,11 @@ export const AWARDS: Award[] = [
     description: "Developed a self-supervised pre-training method to enable robust model training with limited labeled data."
   },
   {
+    title: "1st Prize of ISICDM2021 Lung CT Anatomy Segmentation Challenge",
+    date: "2021",
+    description: "Developed a self-supervised pre-training method to enable robust model training with limited labeled data."
+  },
+  {
     title: "The Outstanding Master's Thesis of Northeastern University",
     date: "2023",
     description: "One of two awarded in the College of Medicine and Biological Information Engineering."
