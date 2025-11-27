@@ -71,7 +71,7 @@ export const EXPERIENCE: Experience[] = [
     period: "2025 - Present",
     description: [
       "Supervisor: Prof. Anqi Qiu.",
-      "Conducting research on neuroimaging."
+      "Research Focus: PET image synthesis from MRI."
     ]
   },
   {
@@ -80,7 +80,7 @@ export const EXPERIENCE: Experience[] = [
     period: "2023 - Present",
     description: [
       "Supervisor: Prof. Chuyang Ye.",
-      "Research Focus: Medical image synthesis, Diffusion Models, and GANs for brain MRI."
+      "Research Focus: Medical image synthesis, diffusion Models, and GANs for brain MRI."
     ]
   },
   {
@@ -92,65 +92,57 @@ export const EXPERIENCE: Experience[] = [
       "Research Focus: Medical image segmentation and synthesis."
     ]
   },
-  // {
-  //   company: "Hebei University",
-  //   role: "Bachelor's Degree",
-  //   period: "2016 - 2020",
-  //   description: [
-  //     "Majored in Information and Computing Science."
-  //   ]
-  // }
 ];
 
 export const INTERNSHIPS: Internship[] = [
   {
-    company: "Tech Company A",
-    role: "Software Engineer Intern",
-    period: "Summer 2024",
+    company: "Canon Medical Systems",
+    role: "Algorithm Engineer",
+    period: "Winter 2024",
     description: [
       "Developed new features for the main product.",
       "Collaborated with the design team to improve UI/UX."
     ]
   },
   {
-    company: "Research Lab B",
-    role: "Research Assistant",
-    period: "Winter 2023",
+    company: "Hikvision",
+    role: "Algorithm Engineer",
+    period: "Spring 2022",
     description: [
       "Conducted experiments on deep learning models.",
       "Published a paper in a top-tier conference."
     ]
   },
   {
-    company: "Startup C",
-    role: "Frontend Developer Intern",
-    period: "Summer 2022",
+    company: "Technology and Engineering Center for Space Utilization, CAS",
+    role: "Algorithm Engineer",
+    period: "Summer 2021",
     description: [
-      "Built the landing page using React and Tailwind CSS.",
-      "Optimized website performance."
+      "Developed new features for the main product.",
+      "Collaborated with the design team to improve UI/UX."
     ]
   }
 ];
 
 export const AWARDS: Award[] = [
   {
-    title: "Best Paper Award",
+    title: "2nd Prize of MICCAI2024 BraTS",
     date: "2024",
     description: "Awarded for the paper 'Novel Approach to Image Synthesis' at CVPR 2024."
   },
   {
-    title: "Outstanding Student Scholarship",
+    title: "2nd Prize of MICCAI2023 SynthRAD",
     date: "2023",
     description: "Awarded to the top 5% of students for academic excellence."
   },
   {
-    title: "Hackathon Winner",
-    date: "2022",
+    title: "2nd Prize of ISICDM2023 Glioma Segmentation Challenge",
+    date: "2023",
     description: "First place in the University Hackathon for 'Smart Health' project."
   },
   {
-    title: "Dean's List",
-    date: "2021",
+    title: "The Outstanding Master's Thesis of Northeastern University",
+    date: "2023",
     description: "Recognized for academic achievement in the Fall 2021 semester."
   }
 ];
