@@ -1,6 +1,12 @@
 import { Terminal, Sigma, FileText, BarChart } from 'lucide-react';
 import type { Project, Experience, Skill, Internship, Award } from './types';
 
+import project1 from './assets/images/cecam.png';
+import project2 from './assets/images/d3m.png';
+import project3 from './assets/images/dm-sam.png';
+import project4 from './assets/images/ncct-ct.png';
+import project5 from './assets/images/lobes.png';
+
 export const PERSONAL_INFO = {
   name: "Haowen Pang",
   role: "PhD Student",
@@ -17,7 +23,7 @@ export const PROJECTS: Project[] = [
     title: 'CEMRI Dose Reduction',
     description: 'Dose reduction via contrast amplification modeling for brain contrast-enhanced magnetic resonance images.',
     tags: ['Image Synthesis', 'GAN', 'CEMRI'],
-    imageUrl: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=800&q=80',
+    imageUrl: project1,
     githubUrl: 'https://github.com/PangHaowen-hub/DRCAM',
     demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S174680942501585X'
   },
@@ -26,16 +32,16 @@ export const PROJECTS: Project[] = [
     title: 'CEMRI Synthesis from NCMRI',
     description: 'Deformation-driven diffusion model for synthesis of contrast-enhanced MRI with brain tumors.',
     tags: ['Image Synthesis', 'Diffusion Model', 'Deformation', 'MRI'],
-    imageUrl: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=800&q=80',
+    imageUrl: project2,
     githubUrl: 'https://github.com/PangHaowen-hub/D3M',
-    demoUrl: 'https://example.com'
+    demoUrl: 'https://link.springer.com/chapter/10.1007/978-3-032-05325-1_15'
   },
   {
     id: '3',
     title: 'Uncertainty-Guided Image Synthesis',
     description: 'Cascaded diffusion model and segment anything model for medical image synthesis via uncertainty-guided prompt generation.',
     tags: ['Image Synthesis', 'Diffusion Model', 'Segment Anything Model'],
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-217358c7e618?auto=format&fit=crop&w=800&q=80',
+    imageUrl: project3,
     githubUrl: 'https://github.com/PangHaowen-hub/DM-SAM',
     demoUrl: 'https://link.springer.com/chapter/10.1007/978-3-031-96628-6_14',
   },
@@ -44,7 +50,7 @@ export const PROJECTS: Project[] = [
     title: 'CECT Synthesis from NCCT',
     description: 'NCCT-CECT image synthesizers and their application to pulmonary vessel segmentation.',
     tags: ['Image Synthesis', 'GAN', 'CT', 'Vessel Segmentation'],
-    imageUrl: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=800&q=80',
+    imageUrl: project4,
     demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S0169260723000561',
   },
   {
@@ -52,7 +58,7 @@ export const PROJECTS: Project[] = [
     title: 'Pulmonary Lobes Segmentation',
     description: 'A fully automatic segmentation pipeline of pulmonary lobes before and after lobectomy from computed tomography images.',
     tags: ['Image Segmentation', 'nnU-Net', 'CT'],
-    imageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+    imageUrl: project5,
     demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S0010482522005595'
   }
 ];
@@ -97,15 +103,15 @@ export const EXPERIENCE: Experience[] = [
 export const INTERNSHIPS: Internship[] = [
   {
     company: "Canon Medical Systems",
-    role: "Algorithm Engineer",
+    role: "Image Generation Algorithm Intern",
     period: "Winter 2024",
     description: [
-      "Developed deep learning model for contrast-enhanced CT (CECT) synthesis from non-contrast CT (NCCT), aiming to support pulmonary embolism screening and reduce patient contrast agent exposure."
+      "Developed deep learning model for contrast-enhanced CT synthesis from non-contrast CT, aiming to support pulmonary embolism screening and reduce patient contrast agent exposure."
     ]
   },
   {
     company: "HIKVISION",
-    role: "Algorithm Engineer",
+    role: "Deep Learning Algorithm Intern",
     period: "Spring 2022",
     description: [
       "Conducted research and deployment of a lightweight fire video object detection algorithm, improving detection robustness and real-time performance in resource-constrained environments."
@@ -113,7 +119,7 @@ export const INTERNSHIPS: Internship[] = [
   },
   {
     company: "Technology and Engineering Center for Space Utilization, CAS",
-    role: "Algorithm Engineer",
+    role: "Algorithm Intern",
     period: "Summer 2021",
     description: [
       "Designed and implemented lightweight deep learning models for satellite component segmentation and deployment, contributing to on-orbit equipment perception for space engineering applications."
