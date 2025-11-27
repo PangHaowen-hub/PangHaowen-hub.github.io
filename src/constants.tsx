@@ -1,5 +1,5 @@
 import { Terminal, Sigma, FileText, BarChart } from 'lucide-react';
-import type { Project, Experience, Skill } from './types';
+import type { Project, Experience, Skill, Internship, Award } from './types';
 
 export const PERSONAL_INFO = {
   name: "Haowen Pang",
@@ -100,4 +100,38 @@ export const EXPERIENCE: Experience[] = [
   //     "Majored in Information and Computing Science."
   //   ]
   // }
+];
+
+export const INTERNSHIPS: Internship[] = [
+  {
+    company: "Tech Company A",
+    role: "Software Engineer Intern",
+    period: "Summer 2024",
+    description: [
+      "Developed new features for the main product.",
+      "Collaborated with the design team to improve UI/UX."
+    ]
+  },
+  {
+    company: "Research Lab B",
+    role: "Research Assistant",
+    period: "Winter 2023",
+    description: [
+      "Conducted experiments on deep learning models.",
+      "Published a paper in a top-tier conference."
+    ]
+  }
+];
+
+export const AWARDS: Award[] = [
+  {
+    title: "Best Paper Award",
+    date: "2024",
+    description: "Awarded for the paper 'Novel Approach to Image Synthesis' at CVPR 2024."
+  },
+  {
+    title: "Outstanding Student Scholarship",
+    date: "2023",
+    description: "Awarded to the top 5% of students for academic excellence."
+  }
 ];

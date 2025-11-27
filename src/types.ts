@@ -23,6 +23,32 @@ export interface Experience {
   description: string[];
 }
 
+export interface Internship {
+  company: string;
+  role: string;
+  period: string;
+  description: string[];
+}
+
+export interface Award {
+  title: string;
+  date: string;
+  description: string;
+}
+
+export interface Internship {
+  company: string;
+  role: string;
+  period: string;
+  description: string[];
+}
+
+export interface Award {
+  title: string;
+  date: string;
+  description: string;
+}
+
 export interface Message {
   id: string;
   role: 'user' | 'model';
