@@ -100,17 +100,15 @@ export const INTERNSHIPS: Internship[] = [
     role: "Algorithm Engineer",
     period: "Winter 2024",
     description: [
-      "Developed new features for the main product.",
-      "Collaborated with the design team to improve UI/UX."
+      "Developed deep learning model for contrast-enhanced CT (CECT) synthesis from non-contrast CT (NCCT), aiming to support pulmonary embolism screening and reduce patient contrast agent exposure."
     ]
   },
   {
-    company: "Hikvision",
+    company: "HIKVISION",
     role: "Algorithm Engineer",
     period: "Spring 2022",
     description: [
-      "Conducted experiments on deep learning models.",
-      "Published a paper in a top-tier conference."
+      "Conducted research and deployment of a lightweight fire video object detection algorithm, improving detection robustness and real-time performance in resource-constrained environments."
     ]
   },
   {
@@ -118,31 +116,30 @@ export const INTERNSHIPS: Internship[] = [
     role: "Algorithm Engineer",
     period: "Summer 2021",
     description: [
-      "Developed new features for the main product.",
-      "Collaborated with the design team to improve UI/UX."
+      "Designed and implemented lightweight deep learning models for satellite component segmentation and deployment, contributing to on-orbit equipment perception for space engineering applications."
     ]
   }
 ];
 
 export const AWARDS: Award[] = [
   {
-    title: "2nd Prize of MICCAI2024 BraTS",
+    title: "2nd Prize of MICCAI2024 BraTS Global MRI Synthesis Challenge",
     date: "2024",
-    description: "Awarded for the paper 'Novel Approach to Image Synthesis' at CVPR 2024."
+    description: "Synthesize realistic image contrasts given multiple available images to facilitate brain tumor segmentation."
   },
   {
     title: "2nd Prize of MICCAI2023 SynthRAD",
     date: "2023",
-    description: "Awarded to the top 5% of students for academic excellence."
+    description: "Synthesize computed tomography for radiotherapy."
   },
   {
     title: "2nd Prize of ISICDM2023 Glioma Segmentation Challenge",
     date: "2023",
-    description: "First place in the University Hackathon for 'Smart Health' project."
+    description: "Developed a self-supervised pre-training method to enable robust model training with limited labeled data."
   },
   {
     title: "The Outstanding Master's Thesis of Northeastern University",
     date: "2023",
-    description: "Recognized for academic achievement in the Fall 2021 semester."
+    description: "One of two awarded in the College of Medicine and Biological Information Engineering."
   }
 ];
