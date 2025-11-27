@@ -120,6 +120,15 @@ export const INTERNSHIPS: Internship[] = [
       "Conducted experiments on deep learning models.",
       "Published a paper in a top-tier conference."
     ]
+  },
+  {
+    company: "Startup C",
+    role: "Frontend Developer Intern",
+    period: "Summer 2022",
+    description: [
+      "Built the landing page using React and Tailwind CSS.",
+      "Optimized website performance."
+    ]
   }
 ];
 
@@ -133,5 +142,15 @@ export const AWARDS: Award[] = [
     title: "Outstanding Student Scholarship",
     date: "2023",
     description: "Awarded to the top 5% of students for academic excellence."
+  },
+  {
+    title: "Hackathon Winner",
+    date: "2022",
+    description: "First place in the University Hackathon for 'Smart Health' project."
+  },
+  {
+    title: "Dean's List",
+    date: "2021",
+    description: "Recognized for academic achievement in the Fall 2021 semester."
   }
 ];
