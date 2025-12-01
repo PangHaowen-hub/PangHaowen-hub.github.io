@@ -146,7 +146,7 @@ export const AWARDS: Award[] = [
   {
     title: "1st Prize of ISICDM2021 Lung CT Anatomy Segmentation Challenge",
     date: "2021",
-    description: "Developed a self-supervised pre-training method to enable robust model training with limited labeled data."
+    description: "Developed a multi-task segmentation model based on nnU-Net."
   },
   {
     title: "The Outstanding Master's Thesis of Northeastern University",
