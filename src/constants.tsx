@@ -14,7 +14,11 @@ export const PERSONAL_INFO = {
   email: "haowen.pang@bit.edu.cn",
   github: "https://github.com/panghaowen-hub",
   googleScholar: "https://scholar.google.com/citations?user=eJEDpA0AAAAJ",
-  about: `I am currently a PhD student at the Beijing Institute of Technology, under the supervision of Prof. Chuyang Ye. I obtained my Master's degree from Northeastern University, where I was advised by Prof. Shouliang Qi. Presently, I am also a visiting PhD student in the research group of Prof. Anqi Qiu at Hong Kong Polytechnic University. My research primarily focuses on medical image synthesis, particularly brain MRI. I am deeply interested in developing foundation models to enhance image quality and promote intelligent diagnosis in neuroimaging.`
+  about: `I am a PhD student at the Beijing Institute of Technology, dedicated to advancing next-generation medical image synthesis. My work explores how diffusion models, uncertainty estimation, and domain knowledge can be leveraged to synthesize high-fidelity brain MR images—enabling contrast-agent dose reduction, contrast-free enhanced MRI generation, and more robust clinical imaging workflows.
+Before that, I completed my Master's degree at Northeastern University, where I developed deep learning methods for pulmonary CT analysis, including lung lobe and vessel segmentation and non-contrast to contrast-enhanced CT synthesis to support COPD diagnosis and treatment.
+I am currently a visiting PhD student in the group of Prof. Anqi Qiu at The Hong Kong Polytechnic University, working on knowledge-guided MRI-to-PET synthesis for neurodegenerative disease assessment, such as Alzheimer's disease.
+Beyond research, I enjoy tackling real-world problems through medical imaging challenges, and I am always open to collaboration.
+If you are interested in working together on challenge competitions or research projects, feel free to reach out.`
 };
 
 export const PROJECTS: Project[] = [
