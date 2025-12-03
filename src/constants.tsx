@@ -141,7 +141,7 @@ export const AWARDS: Award[] = [
   {
     title: "2nd Prize of ISICDM2023 Glioma Segmentation Challenge",
     date: "2023",
-    description: "Developed a self-supervised pre-training method to enable robust model training with limited labeled data."
+    description: "Developed a data augmentation method to enable robust model training with limited labeled data."
   },
   {
     title: "1st Prize of ISICDM2021 Lung CT Anatomy Segmentation Challenge",
